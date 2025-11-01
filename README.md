@@ -7,6 +7,9 @@
 
 A comprehensive computer vision project for real-time static and dynamic gesture recognition using machine learning. Includes a ready-to-use demo and full ML pipeline with model training capabilities.
 
+Author: Rayhan Roswendi
+Contact: fantasticray2018@gmail.com
+
 ---
 
 ## Quick Start (Demo)
