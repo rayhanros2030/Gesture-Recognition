@@ -216,6 +216,11 @@ python Model_Altogether.py
 - Mode switching (Thumbsup gesture)
 - System action triggers
 
+**Gesture Controls:**
+- **Thumbsup** gesture switches between static and dynamic mode
+- **TwoFingers + Handup** sequence opens YouTube in browser
+- Cooldown period prevents accidental triggers
+
 ---
 
 ## Architecture
@@ -352,6 +357,28 @@ See [requirements.txt](requirements.txt) for complete list:
 2. Train CNN temporal model
 3. Implement gesture control
 4. Add custom gestures
+
+---
+
+## Customizing Gesture Actions
+
+You can customize the gestures and actions in `config.py`:
+
+```python
+GESTURE_CONTROL = {
+    'cooldown_seconds': 8,              # Cooldown between gestures
+    'mode_switch_gesture': 'Thumbsup',  # Gesture to switch modes
+    'action_sequence': ['TwoFingers', 'Handup']  # Gesture combo for action
+}
+```
+
+The `Model_Altogether.py` file uses `pyautogui` to trigger actions. You can modify the `trigger_action()` function to:
+- Open different applications
+- Execute keyboard shortcuts
+- Control system functions
+- Integrate with other APIs
+
+**Note:** The full gesture control system requires trained models. The demo (`demo_gesture_detection.py`) only shows basic hand detection without ML recognition.
 
 ---
 
