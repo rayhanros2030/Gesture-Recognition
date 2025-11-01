@@ -14,13 +14,17 @@ A comprehensive computer vision project for real-time static and dynamic gesture
 **Want to see it in action immediately?** Try our zero-setup demo!
 
 ```bash
-# 1. Install dependencies
+# 1. Download or clone the repository
+git clone https://github.com/rayhanros2030/Gesture-Recognition.git
+cd Gesture-Recognition
+
+# 2. Install dependencies
 python setup_demo.py
 
-# 2. Run the demo
+# 3. Run the demo
 python demo_gesture_detection.py
 
-# 3. Show your hand to the camera!
+# 4. Show your hand to the camera!
 ```
 
 **What you'll see:**
@@ -29,8 +33,6 @@ python demo_gesture_detection.py
 - Automatic gesture naming
 - Visual feedback and bounding boxes
 - **No models or training required!**
-
-For detailed instructions, see the [Quick Start Guide](DEMO_README.md).
 
 ---
 
@@ -76,11 +78,9 @@ For detailed instructions, see the [Quick Start Guide](DEMO_README.md).
 ```
 Gesture-Recognition/
 │
-├── DEMO FILES (Start Here!)
+├── DEMO FILES
 │   ├── demo_gesture_detection.py      # Main demo - works immediately!
-│   ├── setup_demo.py                  # Auto-install dependencies
-│   ├── START_HERE.md                  # Quick overview
-│   └── DEMO_README.md                # Demo documentation
+│   └── setup_demo.py                  # Auto-install dependencies
 │
 ├── TRAINING & MODELS
 │   ├── 1DCNN_Training_Model.py        # Train dynamic gesture models
@@ -96,10 +96,6 @@ Gesture-Recognition/
 │   └── Validate_DynamicGestures.py    # Validate dynamic dataset
 │
 ├── SRC/                               # Source code
-│   ├── Activity 1/                    # Beginner exercises
-│   ├── Activity 2/                    # Intermediate projects
-│   ├── Activity 3/                    # Advanced features
-│   ├── SampleCode/                    # Code examples
 │   └── EXTRA FILES/                   # Additional resources
 │
 ├── DATA/                              # Datasets and models
@@ -115,7 +111,7 @@ Gesture-Recognition/
 └── DOCUMENTATION
     ├── README.md                      # This file
     ├── LICENSE                        # License file
-    └── DEMO_FILES_SUMMARY.txt         # Technical overview
+    └── CONTRIBUTING.md                # Contributing guidelines
 ```
 
 ---
@@ -310,10 +306,8 @@ NUM_EPOCHS = 25
 | Document | Description |
 |----------|-------------|
 | [README.md](README.md) | Project overview (this file) |
-| [DEMO_README.md](DEMO_README.md) | Detailed demo documentation |
-| [START_HERE.md](START_HERE.md) | Navigation guide |
-| [DEMO_FILES_SUMMARY.txt](DEMO_FILES_SUMMARY.txt) | Technical overview |
-| [DEMO_COMPLETE.txt](DEMO_COMPLETE.txt) | Feature summary |
+| [LICENSE](LICENSE) | MIT License |
+| [CONTRIBUTING.md](CONTRIBUTING.md) | Contributing guidelines |
 
 ---
 
