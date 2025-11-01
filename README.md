@@ -7,10 +7,6 @@
 
 A comprehensive computer vision project for real-time static and dynamic gesture recognition using machine learning. Includes a ready-to-use demo and full ML pipeline with model training capabilities.
 
-Author: Rayhan Roswendi
-
-Contact: fantasticray2018@gmail.com
-
 ---
 
 ## Quick Start (Demo)
@@ -36,7 +32,14 @@ python demo_gesture_detection.py
 - Finger counting (0-5 fingers)
 - Automatic gesture naming
 - Visual feedback and bounding boxes
+- Application control via gestures
 - **No models or training required!**
+
+**Gesture Actions:**
+- **1 finger** → Open Notepad/Text Editor
+- **2 fingers** → Open Calculator
+- **3 fingers** → Open YouTube
+- **5 fingers** → Open Google
 
 ---
 
@@ -63,7 +66,8 @@ python demo_gesture_detection.py
 - Real-time webcam hand detection using MediaPipe
 - Visual landmarks and gesture overlay
 - Simple finger counting algorithm
-- Interactive gesture control
+- **Application control via gestures** (Open apps, websites)
+- Interactive gesture triggers
 - Cross-platform support (Windows, macOS, Linux)
 
 ### Full Project Features
@@ -172,6 +176,7 @@ python demo_gesture_detection.py
 
 **Controls:**
 - Show hand to camera → See detection
+- Use gestures to trigger app actions
 - Press `q` → Quit
 
 ---

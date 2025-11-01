@@ -107,7 +107,8 @@ def main():
     required_packages = [
         ("opencv-python", "cv2"),
         ("mediapipe", "mediapipe"),
-        ("numpy", "numpy")
+        ("numpy", "numpy"),
+        ("pyautogui", "pyautogui")
     ]
     
     all_installed = True
