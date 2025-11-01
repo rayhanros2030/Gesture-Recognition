@@ -1,4 +1,4 @@
-# 🎯 Gesture Recognition
+# Gesture Recognition
 
 [![Python 3.7+](https://img.shields.io/badge/python-3.7+-blue.svg)](https://www.python.org/downloads/)
 [![OpenCV](https://img.shields.io/badge/OpenCV-4.5+-green.svg)](https://opencv.org/)
@@ -9,7 +9,7 @@ A comprehensive computer vision project for real-time static and dynamic gesture
 
 ---
 
-## 🚀 Quick Start (Demo)
+## Quick Start (Demo)
 
 **Want to see it in action immediately?** Try our zero-setup demo!
 
@@ -24,96 +24,95 @@ python demo_gesture_detection.py
 ```
 
 **What you'll see:**
-- ✨ Real-time hand detection with 21 landmark points
-- 🔢 Finger counting (0-5 fingers)
-- 🏷️ Automatic gesture naming
-- 📺 Visual feedback and bounding boxes
-- ❌ **No models or training required!**
+- Real-time hand detection with 21 landmark points
+- Finger counting (0-5 fingers)
+- Automatic gesture naming
+- Visual feedback and bounding boxes
+- **No models or training required!**
 
-👉 **[See Quick Start Guide](QUICK_START_DEMO.md)** for detailed instructions
+For detailed instructions, see the [Quick Start Guide](DEMO_README.md).
 
 ---
 
-## 📖 Table of Contents
+## Table of Contents
 
-- [Features](#-features)
-- [Project Structure](#-project-structure)
-- [Installation](#-installation)
-- [Usage](#-usage)
+- [Features](#features)
+- [Project Structure](#project-structure)
+- [Installation](#installation)
+- [Usage](#usage)
   - [Demo Mode](#demo-mode-quick-test)
   - [Full Project](#full-project-advanced)
-- [Architecture](#-architecture)
-- [Training Models](#-training-models)
-- [Documentation](#-documentation)
-- [Requirements](#-requirements)
-- [Contributing](#-contributing)
-- [License](#-license)
+- [Architecture](#architecture)
+- [Training Models](#training-models)
+- [Documentation](#documentation)
+- [Requirements](#requirements)
+- [Contributing](#contributing)
+- [License](#license)
 
 ---
 
-## ✨ Features
+## Features
 
 ### Demo Features
-- 🎥 Real-time webcam hand detection using MediaPipe
-- 🎨 Visual landmarks and gesture overlay
-- 📊 Simple finger counting algorithm
-- 🖱️ Interactive gesture control
-- 🌍 Cross-platform support (Windows, macOS, Linux)
+- Real-time webcam hand detection using MediaPipe
+- Visual landmarks and gesture overlay
+- Simple finger counting algorithm
+- Interactive gesture control
+- Cross-platform support (Windows, macOS, Linux)
 
 ### Full Project Features
-- 🤖 **Static Gesture Recognition**: Random Forest classifier with MediaPipe landmarks
-- 🎬 **Dynamic Gesture Recognition**: Temporal 1D CNN with MobileNet V2 features
-- 📹 **Real-time Video Processing**: Live gesture detection and control
-- 🎯 **System Integration**: Trigger actions based on gestures
-- 🔧 **Model Training**: Complete pipeline for custom models
-- 📊 **Data Collection**: Tools for capturing gesture datasets
-- 🧪 **Validation**: Dataset validation and model evaluation
+- **Static Gesture Recognition**: Random Forest classifier with MediaPipe landmarks
+- **Dynamic Gesture Recognition**: Temporal 1D CNN with MobileNet V2 features
+- **Real-time Video Processing**: Live gesture detection and control
+- **System Integration**: Trigger actions based on gestures
+- **Model Training**: Complete pipeline for custom models
+- **Data Collection**: Tools for capturing gesture datasets
+- **Validation**: Dataset validation and model evaluation
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 Gesture-Recognition/
 │
-├── 🎯 DEMO FILES (Start Here!)
+├── DEMO FILES (Start Here!)
 │   ├── demo_gesture_detection.py      # Main demo - works immediately!
 │   ├── setup_demo.py                  # Auto-install dependencies
 │   ├── START_HERE.md                  # Quick overview
-│   ├── QUICK_START_DEMO.md           # Detailed quick start
 │   └── DEMO_README.md                # Demo documentation
 │
-├── 🤖 TRAINING & MODELS
+├── TRAINING & MODELS
 │   ├── 1DCNN_Training_Model.py        # Train dynamic gesture models
 │   ├── RandomForestTraining.py        # Train static gesture models
 │   ├── Model_Altogether.py            # Complete gesture control
 │   ├── config.py                      # Configuration settings
 │   └── run_pipeline.sh               # Full pipeline execution
 │
-├── 📊 DATA COLLECTION
+├── DATA COLLECTION
 │   ├── Data_StaticGestures.py         # Capture static gestures
 │   ├── Data_DynamicGestures.py        # Capture dynamic sequences
 │   ├── Validate_StaticGestures.py     # Validate static dataset
 │   └── Validate_DynamicGestures.py    # Validate dynamic dataset
 │
-├── 📂 SRC/                            # Source code
+├── SRC/                               # Source code
 │   ├── Activity 1/                    # Beginner exercises
 │   ├── Activity 2/                    # Intermediate projects
 │   ├── Activity 3/                    # Advanced features
 │   ├── SampleCode/                    # Code examples
 │   └── EXTRA FILES/                   # Additional resources
 │
-├── 📦 DATA/                           # Datasets and models
+├── DATA/                              # Datasets and models
 │   └── haarcascades/                  # OpenCV cascade files
 │
-├── 🧪 TESTS/                          # Test scripts
+├── TESTS/                             # Test scripts
 │   └── __init__.py
 │
-├── 📋 DEPENDENCIES
+├── DEPENDENCIES
 │   ├── requirements.txt               # Full project dependencies
 │   └── .gitignore                     # Git ignore rules
 │
-└── 📚 DOCUMENTATION
+└── DOCUMENTATION
     ├── README.md                      # This file
     ├── LICENSE                        # License file
     └── DEMO_FILES_SUMMARY.txt         # Technical overview
@@ -121,7 +120,7 @@ Gesture-Recognition/
 
 ---
 
-## 💻 Installation
+## Installation
 
 ### For Demo Only (Recommended First)
 
@@ -153,7 +152,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🎮 Usage
+## Usage
 
 ### Demo Mode (Quick Test)
 
@@ -164,12 +163,12 @@ python demo_gesture_detection.py
 ```
 
 **Supported Gestures:**
-- ✊ Fist (0 fingers)
-- ☝️ One (1 finger)
-- ✌️ Two / Peace (2 fingers)
-- 🤟 Three (3 fingers)
-- 🖖 Four (4 fingers)
-- 🖐️ Open Hand (5 fingers)
+- Fist (0 fingers)
+- One (1 finger)
+- Two / Peace (2 fingers)
+- Three (3 fingers)
+- Four (4 fingers)
+- Open Hand (5 fingers)
 
 **Controls:**
 - Show hand to camera → See detection
@@ -219,7 +218,7 @@ python Model_Altogether.py
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ### Static Gesture Recognition
 
@@ -252,7 +251,7 @@ Video Sequence → MobileNet V2 → Temporal 1D CNN → Gesture Classification
 
 ---
 
-## 🧪 Training Models
+## Training Models
 
 ### Static Gesture Training
 
@@ -306,12 +305,11 @@ NUM_EPOCHS = 25
 
 ---
 
-## 📚 Documentation
+## Documentation
 
 | Document | Description |
 |----------|-------------|
 | [README.md](README.md) | Project overview (this file) |
-| [QUICK_START_DEMO.md](QUICK_START_DEMO.md) | Fast setup guide |
 | [DEMO_README.md](DEMO_README.md) | Detailed demo documentation |
 | [START_HERE.md](START_HERE.md) | Navigation guide |
 | [DEMO_FILES_SUMMARY.txt](DEMO_FILES_SUMMARY.txt) | Technical overview |
@@ -319,7 +317,7 @@ NUM_EPOCHS = 25
 
 ---
 
-## 📋 Requirements
+## Requirements
 
 ### Demo Requirements
 - Python 3.7+
@@ -337,29 +335,29 @@ See [requirements.txt](requirements.txt) for complete list:
 
 ---
 
-## 🎓 Learning Path
+## Learning Path
 
 ### Beginner
-1. ✅ Start with `demo_gesture_detection.py`
-2. ✅ Understand MediaPipe basics
-3. ✅ Modify finger counting logic
-4. ✅ Read code comments
+1. Start with `demo_gesture_detection.py`
+2. Understand MediaPipe basics
+3. Modify finger counting logic
+4. Read code comments
 
 ### Intermediate
-1. ✅ Collect static gesture data
-2. ✅ Train Random Forest model
-3. ✅ Validate dataset quality
-4. ✅ Test recognition accuracy
+1. Collect static gesture data
+2. Train Random Forest model
+3. Validate dataset quality
+4. Test recognition accuracy
 
 ### Advanced
-1. ✅ Capture dynamic sequences
-2. ✅ Train CNN temporal model
-3. ✅ Implement gesture control
-4. ✅ Add custom gestures
+1. Capture dynamic sequences
+2. Train CNN temporal model
+3. Implement gesture control
+4. Add custom gestures
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
@@ -372,13 +370,13 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - **MediaPipe** by Google for hand detection
 - **OpenCV** community for computer vision tools
@@ -387,13 +385,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 📧 Contact
+## Contact
 
 Have questions or suggestions? Feel free to open an issue or reach out!
-
----
-
-<div align="center">
-  <h3>⭐ Star this repo if you found it helpful! ⭐</h3>
-  <p>Built with ❤️ using Python, OpenCV, MediaPipe, and PyTorch</p>
-</div>
